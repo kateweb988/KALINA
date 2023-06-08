@@ -2217,6 +2217,9 @@ input[type="range"]::-ms-track {
 .err .error__box .error__name {
   margin-bottom: 20px; }
 
+#ser8 .swiper3 {
+  height: auto; }
+
 @media screen and (max-width: 1400px) {
   .item__btn {
     margin: 20px 0 14px 21px; } }
@@ -2983,7 +2986,12 @@ input[type="range"]::-ms-track {
   .popup__text {
     margin-bottom: 17px;
     font-size: 17px;
-    line-height: 27px; } }
+    line-height: 27px; }
+  .ul {
+    flex-direction: column !important; }
+    .ul li {
+      margin: 0 auto 40px !important;
+      width: 100% !important; } }
 
 @media screen and (max-width: 360px) {
   .page h2 {
