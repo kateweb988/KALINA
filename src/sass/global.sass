@@ -1,0 +1,145 @@
+body
+   font-family: 'Proxima Nova Rg', sans-serif
+   background: #FFFFFF
+   font-weight: 400
+   font-size: 16px
+   line-height: 130%
+   color: #5F5F5F
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $yel
+.container
+   padding: 0 15px
+   max-width: 1388px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   margin: 0
+   font-size: 48px
+   line-height: 62px
+   font-family: 'Russo One'
+   font-weight: 400
+h2 
+   margin: 0
+   font-family: 'Russo One'
+   font-weight: 400
+   font-size: 88px
+   line-height: 106px
+   text-transform: uppercase
+   color: rgba(120, 120, 119, 0.2)
+   white-space: nowrap
+.sub h2 
+   transform: rotate(-90deg)
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.yel 
+   color: $yel
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $yel !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   color: white
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $yel !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path, circle
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $yel
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $yel
+   border-radius: 6px
+
+.photo__scroll 
+   scrollbar-width: thin
+   scrollbar-color: blue $yel
+.photo__scroll::-webkit-scrollbar 
+   height: 0px
+   width: 0px
+.photo__scroll::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+.photo__scroll::-webkit-scrollbar-thumb 
+   background-color: $yel
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   border: 2px solid $yel
+   width: 219px
+   height: 44px
+   background: $yel
+   border-radius: 14px
+   font-weight: 400
+   font-size: 16px
+   line-height: 17px
+   font-family: 'Casper'
+   color: #FFFFFF
+   &:hover 
+      color: $yel
+      background: transparent
+      border: 2px solid $yel
+.mob 
+   display: none
+.del 
+   display: block

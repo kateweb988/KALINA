@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="robots" content="noindex">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>Калина</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body class="body page">
+	<div class="body-wrap">
+		<header class="header main" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__box d-flex">
+						<a href="main.html" class="nav__logo">
+							<img src="/img/logo.svg" alt="">
+						</a>
+						<ul class="nav__list d-flex">
+							<li>
+								<a href="main.html">
+									Главная
+								</a>
+							</li>
+							<li class="active">
+								<a href="about.html">
+									О Компании
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Галерея работ
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Гарантии
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Отзывы
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Акции
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<form action="#" class="nav__form">
+							<input type="search" name="search" placeholder="Поиск по сайту..">
+							<button>
+								<img src="/img/search.svg" alt="" class="svg">
+							</button>
+						</form>
+					</div>
+					<div class="nav__bottom d-flex">
+						<div class="nav__socials d-flex">
+							<a href="#" target="blank">
+								<img src="/img/a1.svg" alt="" class="svg">
+							</a>
+							<a href="#" target="blank">
+								<img src="/img/a2.svg" alt="" class="svg">
+							</a>
+						</div>
+						<div class="nav__info d-flex">
+							<div class="nav__item d-flex">
+								<img src="/img/a3.svg" alt="">
+								<a href="mailto:email@email.ru" class="nav__text">
+									email@email.ru
+								</a>
+							</div>
+							<div class="nav__item d-flex">
+								<img src="/img/a4.svg" alt="">
+								<p class="nav__text">
+									г. Йошкар-Ола, ул.Пугачева 1
+								</p>
+							</div>
+							<div class="nav__content">
+								<div class="nav__flex d-flex">
+									<a href="tel:" class="nav__tel d-flex">
+										<img src="/img/a5.svg" alt="">
+										<p>
+											+7 (495) 197-77-00
+										</p>
+									</a>
+									<a href="tel:" class="nav__tel d-flex">
+										<p>
+											+7 (495) 197-77-00
+										</p>
+									</a>
+								</div>
+								<p class="nav__time">
+									прием звонков : 9:00 - 21:00 [пн-сб]
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="menu-btn" id="menu-btn">
+			</div>
+			<div class="menu">
+				<ul class="nav__list d-flex">
+					<li>
+						<a href="main.html">
+							Главная
+						</a>
+					</li>
+					<li class="active">
+						<a href="about.html">
+							О Компании
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Галерея работ
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Гарантии
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Отзывы
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Акции
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Контакты
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="flex d-flex">
+					<h1>
+						О <span class="yel">компании</span>
+					</h1>
+					<div class="bread d-flex">
+						<a href="main.html">
+							Главная
+						</a>
+						<a href="about.html" class="active">
+							О компании
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="info" id="info">
+			<div class="container">
+				<h2>
+					О нас
+				</h2>
+				<div class="info__box d-flex">
+					<div class="info__content">
+						<p class="info__text">
+							<span>
+								ООО "Калина" представляет производство межкомнатных дверей, арок и погонажных изделий в
+								Республике
+								Марий Эл.
+							</span>
+						</p>
+						<p class="info__text">
+							Мы предлагаем продукцию из традиционно наших пород древесины: хвойных (сосна) и лиственных
+							(берёза).
+							Благодаря современной технологии обработки и отделки древесины современными лакокрасочными
+							материалами, изделия имеют благородный вид, сравнимый с древесиной ценных пород.
+						</p>
+					</div>
+					<div class="info__content">
+						<p class="info__text">
+							<span>
+								Наша задача
+							</span>
+							- быстрые сроки изготовления, обновление модельного ряда и индивидуальный подход к нестанМы
+							предлагаем продукцию из традиционно наших пород древесины: хвойных (сосна) и лиственных (берёза).
+						</p>
+						<p class="info__text">
+							Благодаря современной технологии обработки и отделки древесины современными лакокрасочными
+							материалами, изделия имеют благородный вид, сравнимый с древесиной ценных пород.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="res" id="res">
+			<div class="container">
+				<p>
+					Компания «Калина» имеет богатый опыт в производстве стандартных изделий из массива. Наша продукция
+					востребована на рынке межкомнатных дверей. Мы работаем не только с оптовыми покупателями, но и в розницу.
+				</p>
+				<a href="#" class="res__btn btn">
+					Оставить заявку
+				</a>
+			</div>
+		</section>
+		<section class="we" id="we">
+			<div class="container">
+				<h2>
+					Почему мы
+				</h2>
+				<div class="we__box d-flex">
+					<div class="we__item">
+						<div class="we__block">
+							<img src="/img/w1.png" alt="">
+						</div>
+						<p class="we__name">
+							Экологичность
+						</p>
+						<p class="we__text">
+							Вся наша продукция изготавливается из экологически чистых материалов. Мы уделяем особое внимание
+							выбору сырья и используем только сертифицированные материалы, чтобы обеспечить безопасность наших
+							клиентов и
+						</p>
+					</div>
+					<div class="we__item">
+						<div class="we__block">
+							<img src="/img/w4.png" alt="">
+						</div>
+						<p class="we__name">
+							Нестандартные размеры
+						</p>
+						<p class="we__text">
+							Мы предлагаем индивидуальный подход к каждому клиенту, в том числе и возможность заказа мебели
+							нестандартных размеров. Мы производим мебель на заказ, и наши опытные мастера всегда готовы
+							реализовать любые необычные идеи и предпочтения наших клиентов.
+						</p>
+					</div>
+					<div class="we__item">
+						<div class="we__block">
+							<img src="/img/w2.png" alt="">
+						</div>
+						<p class="we__name">
+							Индивидуальный подход
+						</p>
+						<p class="we__text">
+							Мы предлагаем широкий выбор мебели, но мы также готовы предложить индивидуальный подход для каждого
+							клиента. Мы учитываем все пожелания клиентов и готовы производить мебель на заказ, чтобы создать
+							уникальное пространство в доме или офисе
+						</p>
+					</div>
+					<div class="we__item">
+						<div class="we__block">
+							<img src="/img/w3.png" alt="">
+						</div>
+						<p class="we__name">
+							Гарантия
+						</p>
+						<p class="we__text">
+							Мы гарантируем высокое качество всех наших изделий и предоставляет гарантию на всю мебель,
+							произведенную в нашей компании. Если вы обнаружите какие-либо дефекты, мы обязательно их устраним.
+						</p>
+					</div>
+					<div class="we__item">
+						<div class="we__block">
+							<img src="/img/w4.png" alt="">
+						</div>
+						<p class="we__name">
+							Дизайнерские решения
+						</p>
+						<p class="we__text">
+							Мы предлагаем широкий выбор дизайнерских решений, которые помогут создать уникальный интерьер
+							вашего дома или офиса. Мы готовы предложить мебель различных стилей и направлений, чтобы
+							удовлетворить любые вкусы и потребности наших клиентов.
+						</p>
+					</div>
+					<div class="we__item">
+						<div class="we__block">
+							<img src="/img/w5.png" alt="">
+						</div>
+						<p class="we__name">
+							Срок изготовления
+						</p>
+						<p class="we__text">
+							Мы готовы предложить быстрый срок изготовления мебели на заказ. Мы понимаем, что наши клиенты ценят
+							свое время, поэтому мы стараемся выполнить все заказы в срок и без задержек, чтобы наши клиенты
+							могли наслаждаться новой мебелью как можно скорее.
+						</p>
+					</div>
+				</div>
+				<a href="#" class="we__btn btn">
+					Оставить заявку
+				</a>
+			</div>
+		</section>
+		<section class="prod" id="prod">
+			<div class="container">
+				<h2>
+					Наше производство
+				</h2>
+			</div>
+			<div class="prod__box">
+				<div class="prod__video youtube-link" youtubeid="LRkDnSQSFXU">
+					<img src="/img/play.svg" alt="" class="svg">
+				</div>
+			</div>
+		</section>
+		<section class="van" id="van">
+			<div class="container">
+				<p class="van__title">
+					Производство дверей обычно включает в себя <br> следующие этапы:
+				</p>
+				<div class="van__box d-flex">
+					<div class="van__item">
+						<p class="van__name">
+							Подготовка материалов
+						</p>
+						<p class="van__text">
+							Для изготовления дверей требуются различные материалы, включая древесину, стекло, металлические
+							детали и пластик. Эти материалы должны быть предварительно обработаны и подготовлены для
+							использования.
+						</p>
+						<p class="van__num">
+							01
+						</p>
+					</div>
+					<div class="van__item">
+						<p class="van__name">
+							Сборка конструкции
+						</p>
+						<p class="van__text">
+							Сборка двери начинается с склеивания рамы и установки наполнителя, такого как стекло или панель.
+							Дверные створки также могут быть укомплектованы дополнительными элементами, такими как ручки, замки
+							и петли.
+						</p>
+						<p class="van__num">
+							02
+						</p>
+					</div>
+					<div class="van__item">
+						<p class="van__name">
+							Отделка
+						</p>
+						<p class="van__text">
+							После сборки дверь может быть отшлифована, окрашена или покрыта лаком, чтобы придать ей желаемый
+							внешний вид. После завершения этих работ можно приступать к следующему этапу, к установке.
+						</p>
+						<p class="van__num">
+							03
+						</p>
+					</div>
+					<div class="van__item">
+						<p class="van__name">
+							Установка
+						</p>
+						<p class="van__text">
+							Наконец, дверь может быть установлена на своё место с помощью креплений или петель. При установке
+							двери обычно производится её настройка, чтобы убедиться в правильном выравнивании и
+							функционировании всех элементов.
+						</p>
+						<p class="van__num">
+							04
+						</p>
+					</div>
+				</div>
+				<a href="#" class="van__btn btn">
+					Оставить заявку
+				</a>
+			</div>
+		</section>
+		<section class="rev" id="rev">
+			<div class="container">
+				<h2>
+					Отзывы
+				</h2>
+				<div class="swiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="rev__top d-flex">
+								<img src="/img/ava.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Екатерина Лужецкая
+									</p>
+									<p class="rev__time">
+										месяц назад
+									</p>
+									<div class="rev__stars d-flex">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<p class="rev__text">
+								Я очень довольна качеством дверей, которые производит данная компания. У них есть огромный выбор
+								моделей, и я нашла двери, которые идеально подходят к моему интерьеру. Кроме того, сотрудники
+								компании были очень дружелюбны и профессиональны, они помогли мне выбрать идеальные двери для
+								моего дома. Я бы с удовольствием рекомендовала эту компанию всем, кто ищет качественные и
+								красивые двери.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="rev__top d-flex">
+								<img src="/img/ava.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Екатерина Лужецкая
+									</p>
+									<p class="rev__time">
+										месяц назад
+									</p>
+									<div class="rev__stars d-flex">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<p class="rev__text">
+								Я очень довольна качеством дверей, которые производит данная компания. У них есть огромный выбор
+								моделей, и я нашла двери, которые идеально подходят к моему интерьеру. Кроме того, сотрудники
+								компании были очень дружелюбны и профессиональны, они помогли мне выбрать идеальные двери для
+								моего дома. Я бы с удовольствием рекомендовала эту компанию всем, кто ищет качественные и
+								красивые двери.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="rev__top d-flex">
+								<img src="/img/ava.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Екатерина Лужецкая
+									</p>
+									<p class="rev__time">
+										месяц назад
+									</p>
+									<div class="rev__stars d-flex">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<p class="rev__text">
+								Я очень довольна качеством дверей, которые производит данная компания. У них есть огромный выбор
+								моделей, и я нашла двери, которые идеально подходят к моему интерьеру. Кроме того, сотрудники
+								компании были очень дружелюбны и профессиональны, они помогли мне выбрать идеальные двери для
+								моего дома. Я бы с удовольствием рекомендовала эту компанию всем, кто ищет качественные и
+								красивые двери.
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="rev__top d-flex">
+								<img src="/img/ava.png" alt="" class="rev__ava">
+								<div class="rev__content">
+									<p class="rev__name">
+										Екатерина Лужецкая
+									</p>
+									<p class="rev__time">
+										месяц назад
+									</p>
+									<div class="rev__stars d-flex">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+										<img src="/img/star.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<p class="rev__text">
+								Я очень довольна качеством дверей, которые производит данная компания. У них есть огромный выбор
+								моделей, и я нашла двери, которые идеально подходят к моему интерьеру. Кроме того, сотрудники
+								компании были очень дружелюбны и профессиональны, они помогли мне выбрать идеальные двери для
+								моего дома. Я бы с удовольствием рекомендовала эту компанию всем, кто ищет качественные и
+								красивые двери.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="rev__nav d-flex">
+					<div class="swiper-button-prev2 rev__arr">
+						<img src="/img/left2.svg" alt="" class="svg">
+					</div>
+					<div class="swiper-pagination2"></div>
+					<div class="swiper-button-next2  rev__arr">
+						<img src="/img/right2.svg" alt="" class="svg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ser" id="ser">
+			<div class="container">
+				<h2>
+					Сертификаты
+				</h2>
+				<div class="swiper3">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="ser__block">
+								<a href="/img/ser.png" data-fancybox="gallery" class="ser__doc">
+									<img src="/img/ser.png" alt="">
+								</a>
+							</div>
+							<p class="ser__name">
+								<span>Сертификат качества</span> на двери
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="ser__block">
+								<a href="/img/ser.png" data-fancybox="gallery" class="ser__doc">
+									<img src="/img/ser.png" alt="">
+								</a>
+							</div>
+							<p class="ser__name">
+								<span>Сертификат качества</span> на двери
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="ser__block">
+								<a href="/img/ser.png" data-fancybox="gallery" class="ser__doc">
+									<img src="/img/ser.png" alt="">
+								</a>
+							</div>
+							<p class="ser__name">
+								<span>Сертификат качества</span> на двери
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="ser__block">
+								<a href="/img/ser.png" data-fancybox="gallery" class="ser__doc">
+									<img src="/img/ser.png" alt="">
+								</a>
+							</div>
+							<p class="ser__name">
+								<span>Сертификат качества</span> на двери
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="ser__block">
+								<a href="/img/ser.png" data-fancybox="gallery" class="ser__doc">
+									<img src="/img/ser.png" alt="">
+								</a>
+							</div>
+							<p class="ser__name">
+								<span>Сертификат качества</span> на двери
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="ser__nav d-flex">
+					<div class="swiper-button-prev3 ser__arr">
+						<img src="/img/left2.svg" alt="" class="svg">
+					</div>
+					<div class="swiper-pagination3"></div>
+					<div class="swiper-button-next3  ser__arr">
+						<img src="/img/right2.svg" alt="" class="svg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cont" id="cont">
+			<div class="cont__row d-flex">
+				<div class="sub">
+					<h2>
+						<span class="dl"> Контакты</span> <span class="plan">Напишите нам</span>
+					</h2>
+				</div>
+				<div class="container">
+					<h2>
+						Напишите нам
+					</h2>
+					<div class="cont__box d-flex">
+						<div class="cont__info">
+							<img src="/img/cont.png" alt="">
+							<div class="cont__flex d-flex">
+								<div class="cont__item">
+									<div class="cont__name d-flex">
+										<img src="/img/a4.svg" alt="">
+										<p>
+											Наш адрес
+										</p>
+									</div>
+									<p class="cont__text">
+										г. Йошкар-Ола, ул.Пугачева
+									</p>
+								</div>
+								<div class="cont__item">
+									<div class="cont__name d-flex">
+										<img src="/img/a3.svg" alt="">
+										<p>
+											Наш Email
+										</p>
+									</div>
+									<a href="mailto:email@email.ru" class="cont__text">
+										email@email.ru
+									</a>
+								</div>
+								<div class="cont__item">
+									<div class="cont__name d-flex">
+										<img src="/img/a5.svg" alt="">
+										<p>
+											Наши телефоны
+										</p>
+									</div>
+									<a href="tel:+74951977700" class="cont__text tel">
+										+7 (495) 197-77-00
+									</a>
+									<a href="tel:+74951977700" class="cont__text tel">
+										+7 (495) 197-77-00
+									</a>
+									<p class="cont__time">
+										прием звонков:9:00 - 21:00 [пн-сб]
+									</p>
+								</div>
+								<div class="cont__item">
+									<div class="cont__name d-flex">
+										<img src="/img/a5.svg" alt="">
+										<p>
+											Социальные сети
+										</p>
+									</div>
+									<div class="nav__socials d-flex">
+										<a href="#" target="blank">
+											<img src="/img/face.svg" alt="" class="svg">
+										</a>
+										<a href="#" target="blank">
+											<img src="/img/a1.svg" alt="" class="svg">
+										</a>
+										<a href="#" target="blank">
+											<img src="/img/a2.svg" alt="" class="svg">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cont__block">
+							<p class="cont__title">
+								Оставьте заявку прямо на нашем сайте и <br>
+								мы свяжемся Вами в ближайшее время.
+							</p>
+							<form action="#" class="cont__form">
+								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="tel" name="tel" placeholder="Ваш телефон">
+								<input type="email" name="email" placeholder="Ваш email">
+								<textarea name="text" placeholder="Ваше сообщение"></textarea>
+								<button class="cont__btn btn">
+									Отправить
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="map"></div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<div class="footer__content d-flex">
+						<a href="main.html" class="nav__logo">
+							<img src="/img/logo.svg" alt="">
+						</a>
+						<ul class="nav__list d-flex">
+							<li>
+								<a href="main.html">
+									Главная
+								</a>
+							</li>
+							<li class="active">
+								<a href="about.html">
+									О Компании
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Галерея работ
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Гарантии
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Отзывы
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Акции
+								</a>
+							</li>
+							<li>
+								<a href="">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="nav__socials d-flex">
+						<a href="#" target="blank">
+							<img src="/img/a1.svg" alt="" class="svg">
+						</a>
+						<a href="#" target="blank">
+							<img src="/img/a2.svg" alt="" class="svg">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__flex d-flex">
+						<p>
+							2023. © Все права защищены
+						</p>
+						<a href="https://gasfort.ru/" class="footer__com" target="blank">
+							<img src="/img/com.svg" alt="">
+						</a>
+						<div class="footer__links d-flex">
+							<a href="#" target="blank">
+								Пользовательское соглашение
+							</a>
+							<a href="#" target="blank">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__bg" id="popup">
+			<div class="popup">
+				<picture class="close-popup">
+					<source srcset="/img/yel.png" media="(max-width: 500px)">
+					<img src="/img/close.svg" alt="">
+				</picture>
+				<div class="popup__wrap d-flex">
+					<div class="popup__content">
+						<img src="/img/popup.png" alt="" class="popup__pic">
+						<p class="popup__name">
+							Гравиров Николай
+						</p>
+						<p class="popup__job">
+							Управляющий партнер
+						</p>
+						<p class="popup__el">
+							Стаж более 15 лет
+						</p>
+					</div>
+					<div class="popup__info">
+						<div class="popup__block">
+							“Требуя невозможного, мы получаем наилучшее из возможного ”
+						</div>
+						<p class="popup__title">
+							Ключевые навыки:
+						</p>
+						<ul class="we__list">
+							<li>
+								Окончил Московский Государственный Индустриальный Университет, а также Российскую Академию
+								Правосудия.
+							</li>
+							<li>
+								Юридическая практика более 15 лет.
+							</li>
+							<li>
+								Эксперт в сфере договорного, корпоративного, международного, а также судебного блока.
+							</li>
+							<li>
+								Профессиональный медиатор, и специалист по досудебному урегулированию споров и сопровождению
+								сложных переговорных процессов.
+							</li>
+							<li>
+								Практикующий третейский судья.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup__bg2" id="popup2">
+			<div class="popup2">
+				<picture class="close-popup2">
+					<source srcset="/img/yel.png" media="(max-width: 500px)">
+					<img src="/img/close.svg" alt="">
+				</picture>
+				<div class="popup__wrap d-flex">
+					<div class="popup__content">
+						<img src="/img/popup.png" alt="" class="popup__pic">
+						<p class="popup__name">
+							Лисейцев Дмитрий
+						</p>
+						<p class="popup__job">
+							Партнер по юридическому направлению
+						</p>
+						<p class="popup__el">
+							Стаж более 8 лет
+						</p>
+					</div>
+					<div class="popup__info">
+						<div class="popup__block">
+							“Требуя невозможного, мы получаем наилучшее из возможного ”
+						</div>
+						<p class="popup__title">
+							Ключевые навыки:
+						</p>
+						<ul class="we__list">
+							<li>
+								Окончил Московский Государственный Индустриальный Университет, а также Российскую Академию
+								Правосудия.
+							</li>
+							<li>
+								Юридическая практика более 15 лет.
+							</li>
+							<li>
+								Эксперт в сфере договорного, корпоративного, международного, а также судебного блока.
+							</li>
+							<li>
+								Профессиональный медиатор, и специалист по досудебному урегулированию споров и сопровождению
+								сложных переговорных процессов.
+							</li>
+							<li>
+								Практикующий третейский судья.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup__bg3" id="popup3">
+			<div class="popup3">
+				<picture class="close-popup3">
+					<source srcset="/img/yel.png" media="(max-width: 500px)">
+					<img src="/img/close.svg" alt="">
+				</picture>
+				<div class="popup__wrap d-flex">
+					<div class="popup__content">
+						<img src="/img/popup.png" alt="" class="popup__pic">
+						<p class="popup__name">
+							Палеева Мария
+						</p>
+						<p class="popup__job">
+							Главный специалист по судебной работе
+						</p>
+						<p class="popup__el">
+							Стаж более 6 лет
+						</p>
+					</div>
+					<div class="popup__info">
+						<div class="popup__block">
+							“Требуя невозможного, мы получаем наилучшее из возможного ”
+						</div>
+						<p class="popup__title">
+							Ключевые навыки:
+						</p>
+						<ul class="we__list">
+							<li>
+								Окончил Московский Государственный Индустриальный Университет, а также Российскую Академию
+								Правосудия.
+							</li>
+							<li>
+								Юридическая практика более 15 лет.
+							</li>
+							<li>
+								Эксперт в сфере договорного, корпоративного, международного, а также судебного блока.
+							</li>
+							<li>
+								Профессиональный медиатор, и специалист по досудебному урегулированию споров и сопровождению
+								сложных переговорных процессов.
+							</li>
+							<li>
+								Практикующий третейский судья.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					// Центр карты, указываем коордианты
+					center: [56.621662, 47.871653],
+					// Масштаб, тут все просто
+					zoom: 14,
+					// Отключаем все элементы управления
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Наша метка, указываем коордианты
+				myGeoObjects = new ymaps.Placemark([56.621662, 47.871653], {
+					balloonContentBody: 'Hockey Mgn ',
+				}, {
+					iconLayout: 'default#image',
+					// Путь до нашей картинки
+					iconImageHref: '/img/icon.png',
+					// Размер по ширине и высоте
+					iconImageSize: [28, 40],
+					// Смещение левого верхнего угла иконки относительно
+					// её «ножки» (точки привязки).
+					iconImageOffset: [-35, -35]
+				});
+
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				// Отлючаем возможность изменения масштаба
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+		<!-- <script>
+			document.querySelector('.menu-btn').addEventListener('click', () => {
+				document.querySelector('.body').classList.toggle('three');
+			});
+		</script> -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<script src="js/all.js"></script>
+</body>
+
+</html>

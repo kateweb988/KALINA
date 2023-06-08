@@ -1,0 +1,1777 @@
+.close-popup, .close-popup2, .close-popup3
+   position: absolute
+   top: 15px
+   right: 15px
+   cursor: pointer
+   width: 22px
+   height: 22px
+   z-index: 20
+   transform: rotate(0deg)
+   transition: 0.5s
+   &:hover 
+      transform: rotate(90deg)
+input::-webkit-input-placeholder 
+   color: #11243E !important
+input::-moz-placeholder
+   color: #11243E !important
+input:-ms-input-placeholder 
+   color: #11243E !important
+input:-moz-placeholder 
+   color: #11243E !important
+.menu-btn, .menu
+   display: none
+button 
+   transition: 0.5s
+.popup__bg, .popup__bg2, .popup__bg3
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100vh
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.png)
+   backdrop-filter: blur(5.5px)
+   opacity: 0
+   pointer-events: none
+   transition: 0.5s all
+   overflow-y: auto
+   overflow-x: hidden
+.popup__bg.active, .popup__bg2.active, .popup__bg3.active
+   opacity: 1
+   pointer-events: all
+   transition: 0.5s all
+   z-index: 22
+.popup, .popup2, .popup3
+   position: absolute
+   top: 49%
+   left: 50%
+   transform: translate(-50%, -50%) scale(0)
+   height: auto
+   transition: 0.5s all
+   width: 1004px
+   background: #D9D9D9
+   border-radius: 15px
+.popup.active, .popup2.active, .popup3.active
+   transform: translate(-50%, -46%) scale(1)
+   transition: 0.5s all
+.popup, .popup2, .popup3
+   position: relative
+   height: auto
+   &__content 
+      padding: 60px
+   &__title 
+      margin-bottom: 24px
+      font-weight: 400
+      font-size: 28px
+      line-height: 38px
+      color: #D1B286
+      font-family: 'Russo One'
+   &__text 
+      margin-bottom: 24px
+      font-weight: 400
+      font-size: 20px
+      line-height: 32px
+      font-family: 'Casper'
+   .cont__form
+      input, textarea
+         background: transparent
+         border-bottom: 1px solid rgba(95, 95, 95, 0.4)
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+   display: none
+.custom-checkbox 
+   position: absolute
+   z-index: -1
+   opacity: 0
+.custom-checkbox+label 
+   display: flex
+   align-items: flex-start
+   user-select: none
+   cursor: pointer
+   font-size: 24px
+   line-height: 33px
+   color: #FFFFFF
+.custom-checkbox+label::before
+   content: ''
+   display: inline-block
+   flex-shrink: 0
+   display: flex
+   flex-grow: 0
+   background-repeat: no-repeat
+   background-position: center center
+   background: $yel
+   margin-right: 20px
+   flex: 1 0 auto
+   width: 30px
+   height: 30px
+   border: 1px solid white
+   transition: 0.2s
+   max-width: 30px
+   max-height: 30px
+   border-radius: 50%
+.custom-checkbox:checked+label::before 
+   background: url(/img/check.svg) no-repeat center center
+   background-color: $yel
+.menu-btn2 
+   width: 113px
+   height: 113px
+   position: fixed
+   right: 2%
+   top: 71%
+   z-index: 10
+   background: url(/img/mess.png) no-repeat
+   cursor: pointer
+   opacity: 0.7
+.menu2 
+   position: fixed
+   right: -100%
+   top: 6px
+   width: auto
+   height: auto
+   transform: translateX(500%)
+   transition: transform 0.5s
+   z-index: 10
+   overflow: hidden
+.menu2.active
+   right: 13%
+   top: 66%
+   transform: translateX(0)
+.menu-btn2.active 
+   overflow: visible
+   position: fixed
+   background: url(/img/close2.svg) no-repeat
+   right: 8.8%
+   top: 69%
+   width: 52px
+   height: 52px
+   opacity: 1
+#event-change
+   padding: 20px 0
+   position: absolute
+   color: transparent
+   z-index: -1
+   opacity: 0
+.style1
+   position: relative
+   z-index: 6
+/* SELECT */
+.selectCF
+   margin: 0
+   padding: 0
+   display: inline-block
+   position: relative
+   color: black
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   width: 191px
+   height: 54px
+   background: #FFFFFF
+   border: 1px solid rgba(17, 36, 62, 0.2)
+.selectCF li
+   list-style:none
+   cursor: pointer
+   perspective: 900px
+   -webkit-perspective: 900px
+   text-align: left
+   width: 100%
+   height: 100%
+   max-height: 100%
+   box-sizing: border-box
+.selectCF > li
+   position: relative
+   font-size: 0
+   border: 1px solid rgba(250, 250, 255, 0.24);
+.selectCF span
+   display: flex
+   height: auto
+   line-height: 100%
+   color: #888888
+   z-index: 1
+   align-items: center
+.selectCF .arrowCF
+   transition: .3s
+   -webkit-transition: .3s
+   width: 20px
+   height: 15px
+   text-align: center
+   vertical-align: top
+   background: url(/img/down.svg) no-repeat !important
+   position: absolute
+   right: 20px
+   top: 20px
+.selectCF .titleCF
+   text-overflow: ellipsis
+   color: white !important
+   white-space: nowrap
+   width: max-content !important
+   height: max-content !important
+   padding-left: 20px
+   box-sizing: border-box
+   margin-top: 15px
+   background: transparent !important
+   font-weight: 400
+   font-size: 16px
+   line-height: 22px
+   color: #11243E !important
+.selectCF .searchCF
+   position: absolute
+   top: 3px
+   right: 0
+   z-index: -1
+@keyframes searchActive 
+   from
+      transform: rotateY(180deg) 
+   to
+      transform: rotateY(0deg)
+@-moz-keyframes searchActive 
+   from
+      transform: rotateY(180deg) 
+   to
+      transform: rotateY(0deg)
+@-webkit-keyframes searchActive 
+   from
+      -webkit-transform: rotateY(180deg) 
+   to
+      -webkit-transform: rotateY(0deg)
+.searchActive .searchCF
+   z-index: 1
+   animation: searchActive 0.3s alternate 1
+   -moz-animation: searchActive 0.3s alternate 1
+   -webkit-animation: searchActive 0.3s alternate 1
+.searchActive .titleCF
+   opacity: 0
+.selectCF .searchCF input
+   border: none !important
+   padding: 0
+   margin: 0
+   width: auto
+   height: auto
+   background: transparent
+.selectCF .searchCF input:active, .selectCF .searchCF input:focus
+   box-shadow: none !important
+   border: none !important
+   outline: none !important
+.selectCF li ul
+   display: none
+   position: absolute
+   top: 100%
+   left: 1px
+   width: 100%
+   background: white
+   max-height: 255px
+   overflow-y: auto
+   transition: .2s
+   -webkit-transition: .2s
+   z-index: 2
+   box-sizing: border-box
+   padding-bottom: 10px
+   border: 1px solid rgba(17, 36, 62, 0.2)
+.selectCF li ul li
+   padding: 9px 0 9px 20px
+   transition: .2s
+   -webkit-transition: .2s
+   overflow: hidden
+   text-overflow: ellipsis
+   white-space: nowrap
+   border-top: none
+   box-sizing: border-box
+   height: 34px
+   font-weight: 400
+   font-size: 16px
+   line-height: 22px
+   color: #11243E
+   &:last-child
+      border-radius: 0px 0px 5px 5px
+      padding-bottom: 10px
+   &:hover 
+      color: $yel
+.onCF .arrowCF
+   transform: rotate(180deg)
+   -webkit-transform: rotate(180deg)
+@-moz-keyframes effect1 
+   from
+      transform: translateY(15px)
+      opacity: 0
+   to
+      transform: translateY(0px)
+      opacity: s1
+@-webkit-keyframes effect1 
+   from
+      -webkit-transform: translateY(15px) 
+      opacity: 0
+   to
+      -webkit-transform: translateY(0px)
+      opacity: 1
+.onCF li ul
+   display: block
+   position: absolute
+   -moz-animation: effect1 0.3s alternate 1
+   -webkit-animation: effect1 0.3s alternate 1
+   left: -0.55px
+   top: 61px
+   border-radius: 0 0 4px 4px
+   width: 100.6%
+input[type=checkbox]
+   display: none;
+input[type=checkbox] + label:before
+   content: "\2713"
+   color: transparent
+   display: inline-block
+   font-size: 20px
+   line-height: 19px
+   margin: 0px 10px 0 0
+   text-align: center
+   vertical-align: middle
+   transition: color ease .3s
+   width: 22px
+   height: 22px
+   background: #FFFFFF
+   border: 1px solid $yel
+   border-radius: 100px
+   flex: 1 0 auto
+   max-width: 22px
+   box-sizing: border-box
+input[type=checkbox]:checked + label:before 
+   background: $yel
+   box-shadow: inset 0 0 0 4.5px #fff
+input[type="number"] 
+   width: 40px
+   padding: 4px 5px
+   border: 1px solid #bbb
+   border-radius: 3px
+input[type="number"]:focus 
+   box-shadow: 0 0 3px 1px #4b81dd
+   outline: none
+input[type="range"] 
+   -webkit-appearance: none
+   position: relative
+   z-index: 3
+   width: 100%
+   height: 5px
+   background: #cfd3d8
+   border: none !important
+   background-image: linear-gradient($yel, $yel)
+   background-size: 0% 100%
+   background-repeat: no-repeat
+   top: -15px
+input[type="range"]::-webkit-slider-thumb 
+   -webkit-appearance: none
+   height: 16px
+   width: 16px
+   border-radius: 50%
+   background: url(/img/range.svg) no-repeat
+   cursor: ew-resize
+   box-shadow: 0 0 2px 0 #555
+   transition: background .3s ease-in-out
+input[type="range"]::-moz-range-thumb 
+   -webkit-appearance: none
+   height: 16px
+   width: 16px
+   border-radius: 50%
+   background: url(/img/range.svg) no-repeat
+   cursor: ew-resize
+   box-shadow: 0 0 2px 0 #555
+   transition: background .3s ease-in-out
+input[type="range"]::-ms-thumb 
+   -webkit-appearance: none
+   height: 20px
+   width: 20px
+   border-radius: 50%
+   background: #ff4500
+   cursor: ew-resize
+   box-shadow: 0 0 2px 0 #555
+   transition: background .3s ease-in-out
+input[type=range]::-webkit-slider-runnable-track  
+   -webkit-appearance: none
+   box-shadow: none
+   border: none
+   background: transparent
+input[type=range]::-moz-range-track 
+   -webkit-appearance: none
+   box-shadow: none
+   border: none
+   background: transparent
+input[type="range"]::-ms-track 
+   -webkit-appearance: none
+   box-shadow: none
+   border: none
+   background: transparent
+.nav
+   margin-bottom: 20px
+   &__box 
+      padding: 6px 0 9px
+      align-items: center
+      justify-content: space-between
+      position: relative
+      &:after 
+         content: ""
+         display: block
+         width: 300%
+         position: absolute
+         left: -100%
+         bottom: 4px
+         height: 1px
+         background: rgba(95, 95, 95, 0.2)
+   &__logo 
+      display: block
+      img 
+         width: 100%
+         height: 100%
+         object-fit: contain
+   &__list 
+      flex-wrap: wrap
+      li 
+         margin-right: 32px
+         &:last-child
+            margin-right: 0
+         a 
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            color: #787877
+            border-bottom: 1px solid transparent
+         &.active 
+            a 
+               color: $yel
+               border-bottom: 1px solid $yel
+         &:hover 
+            a 
+               color: $yel
+   &__form 
+      width: 284px
+      height: 40px
+      position: relative
+      input 
+         width: 100%
+         height: 100%
+         border: 1px solid #5F5F5F
+         border-radius: 12px
+         padding-left: 44px
+         font-weight: 400
+         font-size: 16px
+         line-height: 24px
+         letter-spacing: -0.01em
+         color: #787877
+         background: transparent
+      button 
+         position: absolute
+         left: 8px
+         top: 9px
+         background: transparent
+         border: none
+         transition: 0.5s
+         &:hover 
+            .svg 
+               path, circle 
+                  stroke: $yel
+   &__bottom 
+      align-items: center
+      justify-content: space-between
+      padding: 20px 0
+   &__socials 
+      position: relative
+      top: -9px
+      a 
+         margin-right: 16px
+         &:hover 
+            .svg 
+               path 
+                  fill: $yel
+   &__item 
+      align-items: center
+      margin-right: 40px
+   &__text 
+      font-weight: 700
+      font-size: 18px
+      line-height: 22px
+      color: #787877
+      margin-left: 14px
+   a.nav__text:hover 
+      color: $yel
+   &__tel 
+      margin-right: 25px
+      img 
+         margin-right: 10px
+      p 
+         font-weight: 700
+         font-size: 18px
+         line-height: 22px
+         color: #787877
+         transition: 0.5s
+      &:hover 
+         p 
+            color: $yel
+      &:last-child
+         margin-right: 0
+   &__time 
+      margin-top: 4px
+      font-size: 16px
+      line-height: 19px
+      color: $yel
+   &__info
+      align-items: flex-start
+   &__content 
+      margin-left: 15px
+.header 
+   position: relative
+   background: rgb(248,248,248)
+   .swiper1
+      overflow: hidden
+      height: 641px
+      margin-top: 40px
+      .swiper-slide 
+         width: 100%
+         height: 100%
+         img 
+            width: 100%
+            height: 100%
+            object-fit: cover
+   &__box 
+      position: absolute
+      padding: 43px 59px
+      bottom: 0
+      left: 0
+      width: 100%
+      background: rgba(18, 18, 18, 0.65)
+      backdrop-filter: blur(6px)
+      z-index: 2
+   &__name 
+      margin-bottom: 13px
+      font-weight: 700
+      font-size: 28px
+      line-height: 36px
+      color: #FFFFFF
+   &__one 
+      font-size: 18px
+      line-height: 26px
+      color: rgba(255, 255, 255, 0.8)
+      max-width: 490px 
+      width: 100%
+      margin-bottom: 20px
+   &__link 
+      font-weight: 400
+      font-size: 20px
+      line-height: 22px
+      color: #D1B286
+      opacity: 0.8
+      font-family: 'Casper'
+      border-bottom: 1px solid #D1B286
+      &:hover 
+         color: white 
+         border-bottom: 1px solid white
+   &__row 
+      max-width: 65px 
+      width: 100%
+      justify-content: space-between
+      position: absolute
+      bottom: 189px
+      right: 43px
+      z-index: 3
+   .swiper-pagination1
+      display: flex
+      position: absolute
+      bottom: 29px
+      right: 45px
+      z-index: 3
+      left: inherit
+      justify-content: flex-end
+      .swiper-pagination-bullet
+         background: #EDEDED
+         width: 8px
+         height: 8px
+         border-radius: 50%
+         transition: 0.5s
+         opacity: 1
+      .swiper-pagination-bullet-active
+         background: $yel
+         width: 24px
+         border-radius: 33px
+   &__arr 
+      transition: 0.5s 
+      cursor: pointer
+      &:hover 
+         .svg 
+            path 
+               fill: $yel
+   .swiper-button-disabled
+      opacity: 0
+.why 
+   padding: 0 
+   align-items: initial
+   h2 
+      margin-top: 381px
+   .container
+      padding-left: 3px
+   &__box 
+      justify-content: space-between
+      flex-wrap: wrap
+      border: 1px solid rgba(0, 0, 0, 0.05)
+   &__item 
+      transition: 0.5s 
+      padding: 99px 0
+      position: relative
+      width: 33.33%
+      overflow: hidden
+      border-right: 1px solid rgba(0, 0, 0, 0.05)
+      border-top: 1px solid rgba(0, 0, 0, 0.05)
+      &:nth-child(3n)
+         border-right: none
+      &:hover 
+         background: $yel
+         .why__content 
+            bottom: 30%
+         .why__name
+            opacity: 0
+         .why__block 
+            opacity: 0
+   &__block 
+      margin: 0 auto 
+      min-height: 116px
+      text-align: center
+      transition: 0.5s 
+      opacity: 1
+   &__name 
+      text-align: center
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      color: #444B54
+      transition: 0.5s 
+      opacity: 1
+   &__content 
+      transition: 0.5s 
+      position: absolute
+      bottom: -200px
+      left: 40px
+   &__text 
+      font-weight: 400
+      font-size: 18px
+      line-height: 26px
+      color: white 
+      margin-bottom: 23px
+      max-width: 266px
+      width: 100%
+   &__btn 
+      width: 192.72px
+      height: 43.9px
+      background: transparent
+      color: white
+      border: 1px solid #FFFFFF
+      &:hover 
+         background: white 
+         color: $yel
+   &__order 
+      margin: 60px auto 80px
+.sub 
+   background: #F8F8F8
+   width: 152px
+   display: flex
+   align-items: flex-start
+   justify-content: center
+.cat 
+   padding: 0 
+   background: #F8F8F8
+   align-items: initial
+   .sub 
+      align-items: center
+   .container
+      padding-left: 0
+   &__box 
+      justify-content: space-between
+      flex-wrap: wrap 
+   &__item 
+      width: 50%
+      height: 644px
+      overflow: hidden
+      position: relative
+      display: flex
+      flex-direction: column 
+      &:hover 
+         .cat__text, .cat__link 
+            opacity: 1
+            position: relative
+   &__pic 
+      width: 100%
+      height: 100%
+      object-fit: cover 
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 1
+   &__name 
+      margin-bottom: 13px
+      font-weight: 700
+      font-size: 28px
+      line-height: 36px
+      color: #FFFFFF
+   &__text 
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 26px
+      color: rgba(255, 255, 255, 0.8)
+      width: 100%
+      max-width: 490px
+      margin-bottom: 19px
+      position: absolute
+      opacity: 0
+   &__link 
+      font-size: 20px
+      line-height: 22px
+      color: #D1B286
+      opacity: 0.8
+      width: max-content
+      position: absolute
+      opacity: 0
+      border-bottom: 1px solid #D1B286
+      &:hover 
+         color: white 
+         border-bottom: 1px solid white
+   &__block 
+      background: rgba(18, 18, 18, 0.65)
+      padding: 40px 60px
+      position: relative
+      z-index: 2
+      margin-top: auto
+      transition: 0.5s
+   &__more 
+      margin: 60px auto
+.footer 
+   padding: 60px 0 36px
+   &__box 
+      justify-content: space-between
+      align-items: center
+   .nav__logo 
+      width: 140px
+      margin-right: 69px
+   &__content 
+      align-items: center
+   li 
+      margin-right: 20px
+      a 
+         font-weight: 400
+         font-size: 16px
+         color: #5F5F5F
+         opacity: 0.8
+   .nav__list 
+      position: relative
+      top: -6px
+   .nav__socials 
+      top: -3px
+   &__flex 
+      justify-content: space-between
+      align-items: center
+      p 
+         font-weight: 400
+         font-size: 12px
+         line-height: 26px
+         color: #787877
+         opacity: 0.6
+   &__links
+      a 
+         font-weight: 400
+         font-size: 12px
+         line-height: 26px
+         color: #787877
+         opacity: 0.6
+         margin-left: 33px
+         &:first-child
+            margin-left: 0
+         &:hover 
+            color: $yel
+   &__bottom 
+      padding-top: 32px
+      border-top: 1px solid rgba(0, 0, 0, 0.05)
+      margin-top: 14px
+   &__com 
+      position: relative
+      right: -118px
+.cont 
+   &__row
+      align-items: initial
+   .sub 
+      align-items: center
+   &__box 
+      align-items: flex-start
+      margin: 178px 0 137px 98px
+   &__flex 
+      margin-top: 49px
+      justify-content: space-between
+      flex-wrap: wrap 
+   &__item 
+      width: 50%
+      margin-bottom: 78px
+   &__name 
+      align-items: center
+      margin-bottom: 23px
+      p 
+         font-weight: 700
+         font-size: 20px
+         line-height: 24px
+         color: #5F5F5F
+         opacity: 0.8
+         margin-left: 10px
+   &__text 
+      font-size: 20px
+      line-height: 24px
+      color: #5F5F5F
+      &.tel 
+         margin-bottom: 10px
+         display: block
+   &__title 
+      margin-bottom: 58px
+      font-weight: 400
+      font-size: 20px
+      line-height: 32px
+   &__block 
+      width: 100%
+      max-width: 456px
+      margin-right: 73px
+      position: relative
+      right: 16px
+      top: 57px
+   &__form 
+      width: 100%
+      input 
+         width: 100%
+         border: none 
+         padding-bottom: 10px
+         border-bottom: 1px solid #d8d8d8
+         font-weight: 400
+         font-size: 18px
+         line-height: 32px
+         color: #000
+         margin-bottom: 40px
+         &:focus
+            border: none !important
+            border-bottom: 1px solid $yel !important
+      textarea 
+         width: 100%
+         border: none 
+         border-bottom: 1px solid #d8d8d8
+         font-weight: 400
+         font-size: 18px
+         line-height: 32px
+         color: #000
+         min-height: 103px
+         max-width: 100%
+         margin-bottom: 36px
+         &:focus
+            border: none !important
+            border-bottom: 1px solid $yel !important
+      input::-webkit-input-placeholder 
+         color: rgba(95, 95, 95, 0.6) !important
+      input::-moz-placeholder
+         color: rgba(95, 95, 95, 0.6) !important
+      input:-ms-input-placeholder 
+         color: rgba(95, 95, 95, 0.6) !important
+      input:-moz-placeholder 
+         color: rgba(95, 95, 95, 0.6) !important
+      textarea::-webkit-input-placeholder 
+         color: rgba(95, 95, 95, 0.6) !important
+      textarea::-moz-placeholder
+         color: rgba(95, 95, 95, 0.6) !important
+      textarea:-ms-input-placeholder 
+         color: rgba(95, 95, 95, 0.6) !important
+      textarea:-moz-placeholder 
+         color: rgba(95, 95, 95, 0.6) !important
+      button 
+         width: 100%
+         border: 1px solid rgba(95, 95, 95, 0.6)
+         height: 40.5px
+         background: transparent
+         color: #5F5F5F
+         font-size: 18px
+   .nav__socials
+      top: 0
+      align-items: center
+      .svg 
+         width: 24px
+         height: 24px
+   &__time 
+      font-size: 16px
+      line-height: 17px
+      color: #D1B286
+      font-family: 'Casper'
+   #map 
+      width: 100%
+      height: 487px
+      // filter: grayscale(1)
+      // -ms-filter: grayscale(1)
+      // -webkit-filter: grayscale(1)
+      // -moz-filter: grayscale(1)
+      // -o-filter: grayscale(1)
+.plan 
+   display: none
+.flex 
+   justify-content: space-between   
+   align-items: center
+   margin-bottom: 39px
+.bread 
+   flex-wrap: wrap 
+   a 
+      display: flex
+      align-items: center
+      justify-content: center
+      width: max-content
+      padding: 2px 9px 
+      height: 19px
+      background: #F5F5F5
+      border-radius: 9.5px
+      font-weight: 500
+      font-size: 10px
+      line-height: 150%
+      letter-spacing: 0.015em
+      color: #BDBDBD
+      margin-right: 14px
+      position: relative
+      &.active 
+         color: #424242
+      &:after 
+         display: inline-flex
+         content: "/"
+         margin: 0 5px 
+         font-weight: 500
+         font-size: 10px
+         letter-spacing: 0.015em
+         color: #BDBDBD
+         position: absolute
+         right: -14px
+         top: 3px
+      &:last-child
+         margin-right: 0
+         &:after 
+            display: none
+      &:hover 
+         background: $yel
+         color: white
+.info 
+   padding: 100px 0 94px
+   h2 
+      text-align: center
+   &__box 
+      justify-content: space-between
+      margin: 60px auto 0
+      max-width: 1130px 
+      width: 100%
+   &__content 
+      width: 48%
+   &__text 
+      font-weight: 400
+      font-size: 20px
+      line-height: 32px
+      color: #5F5F5F
+      margin-bottom: 34px
+      font-family: 'Casper'
+      &:last-child
+         margin-bottom: 0
+      span 
+         font-weight: 700
+         text-shadow: 0 0 black
+.res 
+   padding: 120px 0 100px 
+   background: url(/img/res.png) no-repeat center center / cover
+   p 
+      max-width: 1130px 
+      width: 100%
+      font-weight: 700
+      font-size: 36px
+      line-height: 54px
+      text-align: center
+      color: #FFFFFF
+      margin: 0 auto 81px
+   &__btn 
+      margin: 0 auto
+      width: 218.85px
+      height: 60.12px
+.we 
+   padding: 100px 0 104px
+   h2 
+      text-align: center
+   &__box 
+      margin-top: 21px
+      flex-wrap: wrap
+      border-top: 1px solid rgba(0, 0, 0, 0.05)
+      margin-left: 85px
+   &__item 
+      width: 33.3%
+      padding: 60px 40px 
+      border-right: 1px solid rgba(0, 0, 0, 0.05)
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+      &:nth-child(3n)
+         border-right: none
+   &__block 
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      min-height: 116px
+      margin-bottom: 11px
+   &__name 
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      color: #444B54
+      margin-bottom: 20px
+   &__text 
+      font-size: 18px
+      line-height: 26px
+      color: #444B54
+      width: 100%
+      max-width: 320px
+   &__btn 
+      margin: 60px auto 0 
+      width: 219px
+      height: 44px
+.youtube-link .svg, .youtube-link path 
+   transition: 0.5s
+.grtvideo-popup
+   position: fixed
+   top: 0px
+   left: 0
+   right: 0
+   bottom: 0
+   background: rgba(0, 0, 0, 0.85)
+   z-index: 99999
+   padding-top: 100px
+.grtvideo-popup-content
+   margin-top: 50px
+   width: 95%
+   max-width: 850px
+   margin-left: auto
+   margin-right: auto
+   -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+   -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+   box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.4)
+   position: relative
+.grtvideo-popup-close 
+   position: absolute
+   top: -35px
+   right: 0
+   color: #FFF
+   font-size: 25px
+   cursor: pointer
+   transition: 0.5s
+   &:hover 
+      transform: rotate(90deg)
+.grtyoutube-iframe 
+   width: 100%
+   height: 480px
+.prod 
+   padding-top: 99px
+   background: #F8F8F8
+   &__video 
+      margin: 0 auto
+      width: max-content
+      cursor: pointer
+      transition: 0.5s 
+      &:hover 
+         opacity: 0.6
+   h2 
+      text-align: center
+   &__box 
+      padding: 296px 0 
+      background: url(/img/prod.png) no-repeat center center / cover
+      margin-top: 43px
+.page 
+   h2 
+      white-space: initial
+   .cont 
+      h2 
+         text-align: center
+         margin-top: 100px
+   .cont__box
+      margin: 70px 0 137px 98px
+   .cont__row
+      .sub 
+         display: none
+.van 
+   background: #F8F8F8
+   padding: 60px  0 100px 
+   &__title
+      font-weight: 700
+      font-size: 20px
+      line-height: 32px
+      text-align: center
+      color: #5F5F5F
+      margin-bottom: 100px
+      font-family: 'Casper'
+   &__box 
+      justify-content: space-between
+      flex-wrap: wrap 
+      width: 100%
+      max-width: 1206px
+      margin: 0 auto 
+   &__item 
+      position: relative
+      width: 46%
+      margin-bottom: 106px
+   &__name 
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      color: #444B54
+      display: flex
+      align-items: center
+      margin-bottom: 40px
+      position: relative
+      z-index: 1
+      &:before 
+         content: ""
+         display: block
+         width: 24px
+         height: 1px
+         background: #000000
+         margin-right: 20px
+   &__text 
+      font-weight: 400
+      font-size: 18px
+      line-height: 26px
+      color: #444B54
+      font-family: 'Casper'
+   &__num 
+      position: absolute
+      left: 0
+      top: -39px
+      font-size: 88px
+      line-height: 106px
+      text-transform: uppercase
+      color: rgba(209, 178, 134, 0.2)
+      font-family: 'Russo One'
+      z-index: 0
+   &__btn 
+      margin: -39px auto 0
+.rev 
+   padding: 100px 0 
+   .swiper2 
+      overflow: hidden
+      .swiper-slide
+         border: 1px solid rgba(0, 0, 0, 0.05) 
+         padding: 28px 59px 30px 47px
+   h2 
+      text-align: center 
+      margin-bottom: 60px
+   &__top 
+      align-items: center
+   &__ava 
+      margin-right: 22px
+      width: 55.57px
+      height: 55.57px
+      border-radius: 50%
+   &__name 
+      font-size: 15px
+      line-height: 18px
+      color: #000000
+      margin-bottom: 1px
+   &__time 
+      font-size: 12px
+      line-height: 15px
+      color: #676767
+      margin-bottom: 5px
+   &__stars 
+      img 
+         margin-right: 5px
+         &:last-child
+            margin-right: 0
+   &__text 
+      margin-top: 28px 
+      font-size: 18px
+      line-height: 26px
+      color: #444B54
+   &__nav
+      justify-content: center
+      width: max-content
+      margin: 60px auto 0
+      align-items: center
+   .swiper-pagination2
+      display: flex
+      position: relative
+      bottom: 0px
+      right: 0px
+      z-index: 3
+      left: inherit
+      justify-content: flex-end
+      margin: 0 52px
+      .swiper-pagination-bullet
+         background: rgba(18, 18, 18, 0.4)
+         width: 8px
+         height: 8px
+         border-radius: 50%
+         transition: 0.5s
+         opacity: 1
+      .swiper-pagination-bullet-active
+         background: $yel
+         width: 24px
+         border-radius: 33px
+   &__arr 
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 45px
+      height: 48px
+      background: rgba(18, 18, 18, 0.5)
+      border-radius: 14px
+      transition: 0.5s
+      flex: 1 0 auto 
+      max-width: 45px
+      cursor: pointer
+      &:hover 
+         background: $yel
+.ser 
+   background: #F8F8F8
+   padding: 100px 0
+   &__doc 
+      width: 100%
+      height: 316px
+      display: block
+      img 
+         width: 100%
+         height: 100%
+         object-fit: cover
+   &__block 
+      transition: 0.5s 
+      position: relative
+      overflow: hidden
+      border-radius: 14px
+      &:after 
+         width: 100%
+         height: 100%
+         content: ""
+         display: block
+         background: url(/img/search2.svg) no-repeat center center / cover
+         position: absolute
+         left: 0
+         top: 0
+         opacity: 0 
+         transition: 0.5s
+         pointer-events: none
+      &:hover
+         &:after 
+            opacity: 1
+   h2 
+      text-align: center
+   .swiper3 
+      overflow: hidden
+      margin-top: 60px
+      height: 428px
+      .swiper-slide
+         height: 100%
+         img 
+            height: 100%
+            width: 100%
+            object-fit: cover
+      .ser__doc
+         height: 100%
+      .ser__block
+         height: 100%
+   &__name 
+      font-weight: 400
+      font-size: 18px
+      line-height: 28px
+      color: #444B54
+      margin-top: 20px
+      text-align: center
+      span 
+         font-weight: 700
+   &__nav
+      justify-content: center
+      width: max-content
+      margin: 60px auto 0
+      align-items: center
+   .swiper-pagination3
+      display: flex
+      position: relative
+      bottom: 0px
+      right: 0px
+      z-index: 3
+      left: inherit
+      justify-content: flex-end
+      margin: 0 52px
+      .swiper-pagination-bullet
+         background: rgba(18, 18, 18, 0.4)
+         width: 8px
+         height: 8px
+         border-radius: 50%
+         transition: 0.5s
+         opacity: 1
+      .swiper-pagination-bullet-active
+         background: $yel
+         width: 24px
+         border-radius: 33px
+   &__arr 
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 45px
+      height: 48px
+      background: rgba(18, 18, 18, 0.5)
+      border-radius: 14px
+      transition: 0.5s
+      flex: 1 0 auto 
+      max-width: 45px
+      cursor: pointer
+      &:hover 
+         background: $yel
+.tabs__pane 
+   display: none
+.tabs__pane_show 
+   display: block
+.gal 
+   background: #F8F8F8
+   max-width: 1920px 
+   margin: 0 auto
+   width: 100%
+   .tabs__btn 
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #FFFFFF
+      height: 99px
+      font-weight: 400
+      font-size: 20px
+      line-height: 22px
+      color: rgba(39, 39, 39, 0.6)
+      width: 50%
+      &_active 
+         background: $yel
+         color: white !important
+      &:hover 
+        color: $yel
+.gal2 
+   .tabs__btn
+      border-right: 1px solid rgba(0, 0, 0, 0.1)
+.item 
+   background: #F8F8F8
+   max-width: 1920px 
+   margin: 0 auto
+   width: 100%
+   position: relative
+   &:before 
+      content: ""
+      display: block
+      height: 100%
+      width: 500%
+      left: -500%
+      background: #F8F8F8
+      position: absolute
+   &__top 
+      justify-content: space-between
+      a 
+         display: flex
+         align-items: center
+         justify-content: center
+         border: 1px solid rgba(0, 0, 0, 0.1)
+         color: rgba(39, 39, 39, 0.6)
+         font-size: 20px
+         line-height: 22px
+         font-family: 'Casper'
+         height: 99px
+         width: 32%
+         border-right: 0.5px solid rgba(0, 0, 0, 0.1)
+         background: #FFFFFF
+         border-left: none
+         &:hover 
+            color: $yel
+         &:first-child
+            max-width: 720px
+            flex: 1 0 auto 
+            width: 100%
+            background: $yel
+            color: white !important
+            border: 2px solid $yel
+            &:hover 
+               background: transparent 
+               color: $yel !important
+   &__left 
+      max-width: 720px 
+      flex: 1 0 auto
+      width: 100%
+   &__link 
+      .svg 
+         margin-right: 12px
+         position: relative
+         top: 5px 
+      &_next 
+         .svg 
+            margin-right: 0
+            margin-left: 12px
+   .swiper4 
+      width: 100%
+      max-width: 100%
+      overflow: hidden
+      img 
+         width: 100%
+         height: 100%
+         object-fit: cover
+      .swiper-pagination4 
+         display: none
+   &__swiper 
+      position: relative
+   &__block 
+      position: absolute
+      bottom: 7px
+      left: 0
+      background: rgba(18, 18, 18, 0.4)
+      width: 100%
+      height: 100px
+      z-index: 2
+      display: flex
+      padding: 0 0 12px 60px
+      form 
+         margin-top: auto
+         button
+            top: 3px
+         input 
+            border: none
+         .svg 
+            width: 32px
+            height: 32px
+            circle
+               stroke: white
+            path 
+               stroke: white
+   &__line
+      position: absolute
+      right: 46px
+      bottom: 35px
+      display: flex
+      justify-content: space-between
+      max-width: 83px 
+      width: 100%
+      z-index: 4
+      .svg 
+         path 
+            fill: white
+   &__arr 
+      transition: 0.5s 
+      cursor: pointer
+      &:hover 
+         .svg 
+            path
+               fill: $yel
+   &__right 
+      background: white
+      width: 100%
+   &__row 
+      padding: 24px 0 24px 58px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+      align-items: center
+      p:nth-child(1)
+         font-weight: 700
+         font-size: 18px
+         line-height: 28px
+         color: #444B54
+         min-width: 207px
+         margin-right: 40px
+      p:nth-child(2)
+         font-weight: 400
+         font-size: 18px
+         line-height: 32px
+         color: #5F5F5F
+         max-width: 314px
+   &__btn 
+      width: 563px
+      height: 44px
+      margin: 20px 0 14px 57px
+   &__see 
+      display: none
+   &__link2 
+      font-weight: 400
+      font-size: 20px
+      line-height: 22px
+      text-decoration-line: underline
+      color: #D1B286
+      opacity: 0.8
+      font-family: 'Casper'
+      display: block
+   &__content
+      display: flex
+      padding: 37px 0 0 60px
+   &__wrap 
+      width: 100%
+      max-width: 473px
+      margin-left: 40px
+      p 
+         font-weight: 400
+         font-size: 20px
+         line-height: 32px
+         color: #787877
+         margin-bottom: 25px
+   &__name 
+      font-weight: 700
+      font-size: 20px
+      line-height: 28px
+      color: #787877
+      position: relative
+      top: 45px
+   &__box 
+      align-items: flex-start
+.cont2 
+   .cont__form 
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      .cont2__btn
+         width: 100%
+         height: 40px
+         background: $yel
+         color: white 
+         transition: 0.5s 
+         border: 2px solid $yel
+         &:hover 
+            background: transparent 
+            color: $yel
+      input 
+         border: 1px solid rgba(95, 95, 95, 0.4)
+         border-radius: 14px
+         height: 40px
+         padding-left: 20px
+         padding-bottom: 0
+         margin-bottom: 24px
+         &:focus 
+            border: 1px solid $yel !important
+      .input1, .input2 
+         width: 48%
+      textarea 
+         min-height: 159px 
+         border: 1px solid rgba(95, 95, 95, 0.4)
+         border-radius: 14px
+         padding-top: 10px
+         padding-left: 20px
+         margin-bottom: 24px
+         &:focus 
+            border: 1px solid $yel !important
+   .cont__block
+      margin-right: 0
+      top: 0
+      right: 0
+      width: 100%
+      margin: 0 auto
+      max-width: 668px
+   .cont__box
+      margin: 140px auto 76px
+.pay 
+   padding: 99px 0
+   &__box 
+      max-width: 1130px 
+      width: 100%
+      margin: 60px auto 0
+      justify-content: space-between
+      flex-wrap: wrap 
+   h2 
+      text-align: center
+   &__item 
+      width: 49%
+      height: auto
+      background: #FFFFFF
+      border: 1px solid rgba(0, 0, 0, 0.05)
+      padding: 24px 22px 30px 40px
+      margin-bottom: 20px
+   &__block 
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      min-height: 116px
+      margin-bottom: 28px
+   &__name 
+      margin-bottom: 20px
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      color: #444B54
+   &__text 
+      font-size: 20px
+      line-height: 32px
+      font-family: 'Casper'
+   &__wrap
+      max-width: 896px 
+      width: 100%
+      margin: 80px auto 0
+   &__info 
+      width: 100%
+      margin-top: 60px
+      padding: 9px 40px 60px
+      background: #FFFFFF
+      border: 1px solid rgba(0, 0, 0, 0.05)
+      img 
+         margin-bottom: 40px
+   &__title 
+      margin-bottom: 20px
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      color: #444B54
+   &__el 
+      font-size: 20px
+      line-height: 32px
+      font-family: 'Casper'
+   &__btn 
+      margin: 40px auto 0
+.del 
+   padding: 100px 0 
+   background: #F8F8F8
+   h2 
+      text-align: center
+   &__sub 
+      font-weight: 700
+      font-size: 20px
+      line-height: 32px
+      font-family: 'Casper'
+      margin: 29px auto 32px
+      text-align: center
+   &__box 
+      max-width: 1130px 
+      width: 100%
+      margin: 0 auto
+   &__item 
+      width: 100%
+      height: auto
+      border: 1px solid rgba(0, 0, 0, 0.05)
+      margin-bottom: 40px
+      padding: 34px 32px 50px
+      align-items: center
+   &__block 
+      display: flex
+      align-items: center
+      justify-content: center
+      min-width: 116px 
+      margin-right: 34px
+   &__name 
+      margin-bottom: 17px
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      color: #444B54
+   &__text 
+      font-weight: 400;
+      font-size: 20px
+      line-height: 32px
+      color: #5F5F5F
+      font-family: 'Casper'
+   &__btn 
+      margin: 60px auto 0
+.rules 
+   padding: 100px 0
+   h2 
+      text-align: center
+   .del__sub 
+      font-family: 'Proxima Nova Rg', sans-serif
+      font-weight: 700
+      font-size: 20px
+      line-height: 32px
+      margin: 35px auto 60px
+   &__box 
+      max-width: 1130px 
+      width: 100%
+      margin: 0 auto 60px 
+      justify-content: space-between
+      ul 
+         width: 47%
+         li 
+            font-size: 20px
+            line-height: 32px
+            color: #5F5F5F
+            margin-bottom: 20px
+            &:last-child
+               margin-bottom: 0
+            span 
+               font-weight: 700
+   &__btn 
+      margin: 0 auto
+   &__pic 
+      width: 100%
+      margin-top: 100px
+.page 
+   .cont3 
+      h2 
+         margin-top: 40px
+.contacts
+   &__pic 
+      margin-right: -655px
+   .cont__flex 
+      margin-top: 104px
+      margin-left: 46px
+   .nav__socials
+      top: 0
+      align-items: center
+      .svg 
+         width: 24px 
+         height: 24px
+   &__box 
+      align-items: flex-start
+.cont4 
+   background: linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(90deg, rgba(111, 210, 240, 0.9) 43.24%, rgba(217, 146, 239, 0.9) 76.23%)
+   &__sub 
+      font-weight: 400
+      font-size: 20px
+      line-height: 32px
+      text-align: center
+      color: #5F5F5F
+      font-family: 'Casper'
+      margin-top: 35px
+   .cont__box
+      margin-top: 40px
+.policy 
+   padding: 100px 0 
+   &__box 
+      width: 100%
+      max-width: 900px 
+      margin: 0 auto
+   &__name 
+      font-weight: 700
+      font-size: 20px
+      line-height: 32px
+      color: #5F5F5F
+      margin-bottom: 20px
+   &__text 
+      font-size: 20px
+      line-height: 32px
+      margin-bottom: 10px
+   &__item 
+      margin-bottom: 20px
+      &:last-child
+         margin-bottom: 0
+      p 
+         &:last-child
+            margin-bottom: 0
+.error 
+   padding: 90px 0
+   border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+   background: linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(90deg, rgba(111, 210, 240, 0.9) 43.24%, rgba(217, 146, 239, 0.9) 76.23%)
+   &__box 
+      margin: 0 auto 
+      text-align: center
+      img 
+         display: block
+         margin: 0 auto
+   &__name 
+      font-weight: 400
+      font-size: 36px
+      line-height: 43px
+      text-align: center
+      text-transform: uppercase
+      color: rgba(120, 120, 119, 0.2)
+      font-family: 'Russo One'
+      margin-bottom: 45px
+   &__btn 
+      margin: 0 auto
+   &__text 
+      font-weight: 400
+      font-size: 20px
+      line-height: 32px;
+      text-align: center
+      color: #5F5F5F
+      width: 100%
+      max-width: 514px 
+      margin: 0 auto 40px 
+      font-family: 'Casper'
+.err 
+   .nav__list, .nav__form
+      opacity: 0
+      pointer-events: none
+   .error__box
+      img 
+         margin-bottom: 60px
+      .error__name
+         margin-bottom: 20px
