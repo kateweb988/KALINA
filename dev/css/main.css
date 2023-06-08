@@ -839,6 +839,8 @@ input[type="range"]::-ms-track {
     flex-wrap: wrap; }
     .nav__list li {
       margin-right: 32px; }
+      .nav__list li:nth-child(4), .nav__list li:nth-child(5) {
+        display: none; }
       .nav__list li:last-child {
         margin-right: 0; }
       .nav__list li a {
@@ -1826,7 +1828,7 @@ input[type="range"]::-ms-track {
   .item__link .svg {
     margin-right: 12px;
     position: relative;
-    top: 5px; }
+    top: 0px; }
   .item__link_next .svg {
     margin-right: 0;
     margin-left: 12px; }
