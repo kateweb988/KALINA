@@ -421,14 +421,14 @@ input[type="range"]::-ms-track
    &__list 
       flex-wrap: wrap
       li 
-         margin-right: 32px
+         margin-right: 25px
          &:nth-child(4), &:nth-child(5)
             display: none
          &:last-child
             margin-right: 0
          a 
             font-weight: 700
-            font-size: 18px
+            font-size: 17px
             line-height: 22px
             color: #787877
             border-bottom: 1px solid transparent
@@ -726,9 +726,7 @@ input[type="range"]::-ms-track
       position: absolute
       opacity: 0
       border-bottom: 1px solid #D1B286
-      &:hover 
-         color: white 
-         border-bottom: 1px solid white
+      transition: 0.5s
    &__block 
       background: rgba(18, 18, 18, 0.65)
       padding: 40px 60px
@@ -736,6 +734,10 @@ input[type="range"]::-ms-track
       z-index: 2
       margin-top: auto
       transition: 0.5s
+      &:hover 
+         .cat__link 
+            color: white 
+            border-bottom: 1px solid white
    &__more 
       margin: 60px auto
 .footer 
@@ -1022,8 +1024,6 @@ input[type="range"]::-ms-track
       max-width: 320px
    &__btn 
       margin: 60px auto 0 
-      width: 219px
-      height: 44px
 .youtube-link .svg, .youtube-link path 
    transition: 0.5s
 .grtvideo-popup
